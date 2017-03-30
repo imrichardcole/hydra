@@ -8,13 +8,15 @@ Usage
 
 Create a job file (example.job):
 
-  {
-    "output" : true,
-    "commands" : {
-      "ls" : "-lrt",
-      "ps" : "-al"
-    }
+```json
+{
+  "output" : true,
+  "commands" : {
+    "ls" : "-lrt",
+    "ps" : "-al"
   }
+}
+```
 
 Start Hydra refering to this file:
 
@@ -22,6 +24,7 @@ Start Hydra refering to this file:
 
 To turn off output to standard out change the "output" setting to false:
 
+```json
 {
   "output" : false,
   "commands" : {
@@ -29,3 +32,4 @@ To turn off output to standard out change the "output" setting to false:
     "ps" : "-al"
   }
 }
+```
